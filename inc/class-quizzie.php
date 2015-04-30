@@ -79,14 +79,11 @@ class Quizzie {
 	}
 
 	private function get_view( $template, $data ) {
-		$template_dir = $this->plugin_dir . 'inc/templates/';
-		$template     = $template_dir . $template . '.tpl.php';
+		$template = $this->plugin_dir . 'inc/templates/' . $template . '.tpl.php';
 		ob_start();
 		extract( $data );
 		include $template;
-		$html = ob_get_clean();
-		return $html;
+		return ob_get_clean();
 	}
-
 
 }
