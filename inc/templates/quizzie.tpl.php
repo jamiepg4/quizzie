@@ -18,8 +18,8 @@
 					<?php echo esc_html( $question ) ?> You answered <strong><?php echo esc_html( $options[$i]['title'] ) ?></strong>.
 				</div>
 				<div class="quizzie-result-share">
-					<a href="<?php echo esc_attr( 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode( get_permalink() ) ) ?>" target="_blank" class="quizzie-share-facebook">Share on Facebook</a>
-					<a href="<?php echo esc_attr( 'https://twitter.com/share?text=' . urlencode( $question ) ) ?>" target="_blank" class="quizzie-share-twitter">Share on Twitter</a>
+					<a href="<?php echo esc_attr( 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode( get_permalink() ) ) ?>" target="_blank" class="quizzie-share-facebook">Share</a>
+					<a href="<?php echo esc_attr( 'https://twitter.com/share?text=' . urlencode( $question ) ) ?>" target="_blank" class="quizzie-share-twitter">Tweet</a>
 				</div>
 			</div>
 		<?php endfor; ?>
