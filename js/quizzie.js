@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 			'click .quizzie-option': 'handleOptionClick'
 		},
 		handleOptionClick: function(e) {
-			var optionId = this.$(e.target).data('option');
+			var optionId = this.$(e.target).closest('.quizzie-option').data('option');
 			this.showOptionChoiceResult(optionId);
 		},
 		showOptionChoiceResult: function(optionId) {
