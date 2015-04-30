@@ -19,6 +19,8 @@
 
 	.quizzie-quiz {
 
+		transition: all 0.25s ease-out;
+
 		&.answered{
 			-moz-filter: blur(10px);
 			-o-filter: blur(10px);
