@@ -11,7 +11,7 @@
     height: 1px;
     background-color: black;
     width: 100%;
-    margin: 1em 0; }
+    margin: 1em 0 .67em; }
   .quizzie .quizzie-quiz {
     transition: all 0.25s ease-out; }
     .quizzie .quizzie-quiz.answered {
@@ -21,7 +21,9 @@
       -webkit-filter: blur(10px);
       filter: blur(10px); }
     .quizzie .quizzie-quiz h5 {
-      padding: 0 10px; }
+      padding: 0 10px;
+      font-weight: 400;
+      font-size: 18px; }
     .quizzie .quizzie-quiz .quizzie-img {
       padding: 0 10px;
       width: 100%;
