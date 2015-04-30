@@ -1,7 +1,5 @@
 jQuery(document).ready(function($) {
 
-	var QuizzieModel = Backbone.Model.extend();
-
 	var QuizzieView = Backbone.View.extend({
 		events: {
 			'click .quizzie-option': 'handleOptionClick',
@@ -25,12 +23,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.quizzie').each(function(i, el) {
-		var quizId = parseInt($(el).data('id'));
-		var quizModel = new QuizzieModel({id: quizId});
-		var quizView = new QuizzieView({
-			model: quizModel,
-			el: el
-		});
+		var quizView = new QuizzieView({el: el});
 	});
 
 });
