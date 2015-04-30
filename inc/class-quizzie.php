@@ -21,6 +21,5 @@ class Quizzie {
 	}
 
 	private function setup_actions() {
-		die('yo i am here');
 	}
 }
