@@ -59,6 +59,18 @@
     margin-left: 5%; }
     .quizzie .quizzie-result.selected {
       display: block; }
+    .quizzie .quizzie-result .quizzie-result-share a {
+      color: #fff;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 18px;
+      letter-spacing: 3px;
+      border-radius: 1px;
+      text-transform: uppercase;
+      line-height: 40px;
+      text-align: center;
+      width: 50%;
+      display: block;
+      float: left; }
     .quizzie .quizzie-result .quizzie-result-text {
       padding: 10px; }
     .quizzie .quizzie-result .quizzie-share-facebook {
