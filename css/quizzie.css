@@ -1,0 +1,44 @@
+.quizzie {
+  text-align: center; }
+  .quizzie * {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+  .quizzie:before, .quizzie:after {
+    content: ' ';
+    display: block;
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    margin: 1em 0; }
+  .quizzie .quizzie-quiz {
+    max-width: 500px;
+    margin: auto; }
+    .quizzie .quizzie-quiz h5 {
+      padding: 0 10px; }
+    .quizzie .quizzie-quiz .quizzie-img {
+      padding: 10px;
+      width: 100%;
+      height: auto; }
+    .quizzie .quizzie-quiz .quizzie-poll {
+      margin: 0;
+      display: table;
+      border-collapse: separate;
+      border-spacing: 10px; }
+      .quizzie .quizzie-quiz .quizzie-poll .quizzie-option {
+        width: 50%;
+        position: relative;
+        left: 0;
+        display: table-cell;
+        height: 98%;
+        background-color: rgba(255, 255, 255, 0);
+        z-index: 2;
+        box-sizing: border-box;
+        padding: 0 10px;
+        list-style: none; }
+        .quizzie .quizzie-quiz .quizzie-poll .quizzie-option.quizzie-option-2 {
+          right: 0;
+          left: auto; }
+        .quizzie .quizzie-quiz .quizzie-poll .quizzie-option h6 {
+          text-transform: uppercase;
+          letter-spacing: 3px; }
+
+/*# sourceMappingURL=quizzie.css.map */

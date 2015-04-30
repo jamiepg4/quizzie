@@ -10,7 +10,7 @@ module.exports = function( grunt ) {
 
 		addtextdomain: {
 			options: {
-				textdomain: 'gif2html5',
+				textdomain: 'quizzie',
 			},
 			target: {
 				files: {
@@ -31,8 +31,8 @@ module.exports = function( grunt ) {
 			target: {
 				options: {
 					domainPath: '/languages',
-					mainFile: 'gif2html5.php',
-					potFilename: 'gif2html5.pot',
+					mainFile: 'quizzie.php',
+					potFilename: 'quizzie.pot',
 					potHeaders: {
 						poedit: true,
 						'x-poedit-keywordslist': true
@@ -42,12 +42,30 @@ module.exports = function( grunt ) {
 				}
 			}
 		},
+
+		sass: {
+			dist: {
+				files: {
+					'css/quizzie.css' : 'css/sass/quizzie.scss'
+				}
+			}
+		},
+
+		watch: {
+			css: {
+				files: '**/*.scss',
+				tasks: ['sass']
+			}
+		}
+
 	} );
 
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-wp-readme-to-markdown' );
+	grunt.loadNpmTasks( 'grunt-contrib-sass' );
+	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.registerTask( 'i18n', ['addtextdomain', 'makepot'] );
-	grunt.registerTask( 'readme', ['wp_readme_to_markdown']);
+	grunt.registerTask( 'readme', ['wp_readme_to_markdown'] );
 
 	grunt.util.linefeed = '\n';
 

@@ -1,0 +1,64 @@
+.quizzie {
+
+	text-align: center;
+
+	* {
+		-webkit-tap-highlight-color: rgba(255,255,255,0);
+	}
+
+	&:before, &:after {
+		content: ' ';
+		display: block;
+		height: 1px;
+		background-color: black;
+		width: 100%;
+		margin: 1em 0;
+	}
+
+	.quizzie-quiz {
+		max-width: 500px;
+		margin: auto;
+
+		h5 {
+			padding: 0 10px;
+		}
+
+		.quizzie-img {
+			padding: 10px;
+			width: 100%;
+			height: auto;
+		}
+
+		.quizzie-poll {
+			margin: 0;
+			display: table;
+			border-collapse: separate;
+			border-spacing: 10px;
+
+			.quizzie-option {
+				width: 50%;
+				position: relative;
+				left: 0;
+				display: table-cell;
+				height: 98%;
+				background-color: rgba(255, 255, 255, 0);
+				z-index: 2;
+				box-sizing: border-box;
+				padding: 0 10px;
+				list-style: none;
+
+				&.quizzie-option-2 {
+					right: 0;
+					left: auto;
+				}
+
+				h6 {
+					text-transform: uppercase;
+					letter-spacing: 3px
+				}
+
+			}
+
+		}
+	}
+}

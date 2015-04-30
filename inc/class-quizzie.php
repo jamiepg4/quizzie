@@ -75,6 +75,7 @@ class Quizzie {
 	}
 
 	private function enqueue_styles() {
+		wp_enqueue_style( 'quizzie', $this->plugin_url . 'css/quizzie.css' );
 	}
 
 	private function get_view( $template, $data ) {
