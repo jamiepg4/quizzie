@@ -14,8 +14,9 @@
 	<div class="quizzie-results">
 		<?php for ( $i = 0; $i < count( $options ); $i++ ): ?>
 			<div class="quizzie-result" data-option="<?php echo esc_attr( $i ) ?>">
-				<div class="quizzie-result-text">
-					<?php echo esc_html( $question ) ?> You answered <strong><?php echo esc_html( $options[$i]['title'] ) ?></strong>.
+				<div class="text-left quizzie-result-text">
+					<h6>Share</h6>
+					"<?php echo esc_html( $question ) ?> I answered '<?php echo esc_html( $options[$i]['title'] ) ?>'."
 				</div>
 				<div class="quizzie-result-share">
 					<a href="<?php echo esc_attr( 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode( get_permalink() ) ) ?>" target="_blank" class="quizzie-share-facebook">Share</a>
