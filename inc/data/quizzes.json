@@ -1,0 +1,17 @@
+[
+  {
+    "id": 123,
+    "question": "Would you prefer to read for pleasure on the beach or in the forest?",
+    "image_url": "http://placehold.it/480x270",
+    "options": [
+      {
+        "title": "Beach",
+        "description": "The sand, the sea, the fish? Yeah, that’s for me."
+      },
+      {
+        "title": "Forest",
+        "description": "Trees, baby, gimme trees. And lots of wabbits."
+      }
+    ]
+  }
+]
